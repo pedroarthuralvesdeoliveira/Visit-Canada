@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grammar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reading.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+</head>
+<body>
+<!--Vancouver-->
+	<div class="form">
+		<h4 class="header">Practice verbal tenses </h4>
+		<form id="pergunta" name ="pergunta" onsubmit="return validar()">
+			<p>According to the bold verbs of the text, answer:</p>
+
+			<p id="t"> It <b>___________</b> 5 minutes to get home.</p>
+			<label><input type="radio" name="questao1" value="a" id="correta1" />takes</label>
+			<br>
+			<label><input type="radio" name="questao1" value="b" id="incorreta" />took</label>
+			<br>
+			<br>
+
+			<p id="t"> I <b>___________</b> like to get gifts at Christmas </p>	
+			<label><input type="radio" name="questao2" value="a" id="correta2" /> would </label>  <!-- correta-->
+			<br>
+			<input type="radio" name="questao2" value="b" id="incorreta" /> could </label>
+			<br>
+			<br>
+
+			<p id="t"> I am <b>___________</b> to the library right now! </p>
+			<br>
+			<label><input type="radio" name="questao3" value="a" id="correta3" /> going </label>
+			<br>				
+			<label><input type="radio" name="questao3" value="b" id="" id="incorreta" /> go  </label>
+			<br>
+
+			<p id="t"> Look what you have <b>___________</b>  </p>
+			<br>
+			<label><input type="radio" name="questao4" value="a" id="correta4" /> become. </label>
+			<br>				
+			<label><input type="radio" name="questao4" value="b" id="incorreta" /> became </label>
+			<br>
+		</form>
+
+		<button type="submit" class="continue2" name="enviar" onclick="return validar();">
+			<a href="../cities/cidade2.html">Continue</a>
+		</button>
+
+		<script type="text/javascript">
+			function validar(){
+				checar1 = document.getElementById("correta1").checked;
+				checar2 = document.getElementById("correta2").checked;
+				checar3 = document.getElementById("correta3").checked;
+				checar4 = document.getElementById("correta4").checked;
+
+				if(checar1 == false){
+  					alert("Try Again !");
+					return false;
+				} else if (checar2 == false) {
+					alert("Try Again !");
+					return false;
+				} else if ( checar3 == false) {
+					alert("Try Again !");
+					return false;
+				} else if ( checar4 == false) {
+					alert("Try Again !");
+					return false;
+				} else {
+					alert("Congratulations!");
+				}	
+			}
+		</script>
+	</div>
+</body>
+</html>

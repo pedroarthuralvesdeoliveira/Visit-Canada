@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grammar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/cidade.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+</head>
+<body>
+	<!-- Toronto-->
+	<div class="form">
+		<h4 class="header"> Practice superlative </h4>
+		<form id="pergunta" name ="pergunta" onsubmit="return validar();">
+			<p>Pass to the superlative:</p>
+
+			<p id="t"> Large: </p>
+			<label><input type="text" name="questao1" id="correta1" /></label><!-- Largest-->
+			<br>
+			<br>
+
+			<p id="t"> Long: </p>
+			<label><input type="text" name="questao2" id="correta2" />  </label>  <!-- Longest-->
+			<br>
+			<br>
+
+			<p id="t"> Tall: </p>						
+			<label><input type="text" name="questao3" id="correta3" /> </label><!-- Tallest-->
+			<br>			
+		</form>
+
+		<button type="submit" class="continue2" onclick ="return validar();">
+			<a href="../cities/cidade4.html">Continue</a>
+		</button>
+
+		<script type="text/javascript">
+			function validar(){
+				checar1 = document.getElementById("correta1").value;
+				checar2 = document.getElementById("correta2").value;
+				checar3 = document.getElementById("correta3").value;
+
+				if (checar1 != "largest") {
+					alert("Try Again!");
+					return false;
+				} else if(checar2 != "longest") {
+					alert("Try Again!");
+					return false; 
+				} else if(checar3 != "tallest"){
+					alert("Try Again!");
+					return false;
+				} else {
+					//return true;
+					alert("Congratulations!");
+					//window.open('cidade4.html');
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>

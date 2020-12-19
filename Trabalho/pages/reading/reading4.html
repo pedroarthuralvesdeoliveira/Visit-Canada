@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/reading.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
+	<script type="text/javascript">
+          //código JavaScript
+        function verificarTexto() {
+    		try { //Código passivo de erro
+			    //pegando o valor do campo 'input' com id="valor"
+			    var x = document.getElementById("valor").value;
+			    //verificando se o campo está vazio
+			    if (x == ""){ throw "You did not enter park name!";}
+			    //verificando se é um valor numérico
+			    if (isNaN(x) == false){ throw "Tip: There aren't numbers";}
+			    //verificando se o valor mínimo foi atendido
+			    if (x.length < 10){ throw "I think the name is bigger!";}
+			     //verificando se o valor máximo foi respeitado
+			     if (x.length > 30){ throw "The name does not seem to be so big!";}
+    		} catch(err) { //Tratamento para eventual erro capturado
+    			var y=document.getElementById("mesg");	
+    			y.innerHTML= err;
+   			}
+		}
+	</script>
+</head>
+<body>
+	<div class="form">
+		<h4 class="header">Now, answer the questions.</h4>
+		<form id="pergunta" name ="pergunta">
+			<p id="t">According to the text Vancouver is considered one of the best cities to live in. </p>
+
+			<label><input id="correta1" type="radio" name="questao1" value="a"  /> True</label>
+			<br />
+			<label><input id="incorreta" type="radio" name="questao1" value="b" id="" /> False</label>
+			<br />
+			<br />
+
+			<p id="t"> What is the name of the park mentioned in the text?</p>
+
+			<p>Answer:</p><input type="text" name="questao2" id="texto" />
+			<!--The Capilano Suspension Bridge-->
+			<br />
+			<br />
+
+			<p id="t">What is the main attraction of the park in Vancouver?</p>
+
+			<label><input id="incorreta" type="radio" name="questao3" value="a" /> The mountains</label>
+			<br />
+			<label><input id="incorreta" type="radio" name="questao3" value="b" /> The forests</label>
+			<br />
+			<label><input id="correta2" type="radio" name="questao3" value="c" /> The Wooden Bridge</label>
+			<br />
+			<label><input id="incorreta" type="radio" name="questao3" value="d" /> The Beaches </label>
+			<br />
+
+			<button class="continue2" type="submit" onclick="verificarTexto(); return validar();">
+				<a href="exercicios.html">Continue</a>
+			</button>
+
+			<div class="erro"><p id="mesg"></p></div>
+
+			<script type="text/javascript">				
+				function validar(){
+					checar1 = document.getElementById("correta1").checked;
+					checar2 = document.getElementById("correta2").checked;
+					checar3 = document.getElementById("texto").value;
+
+					if(checar1 == false){
+						alert("Try Again !");
+						return false;
+					} else if (checar2 == false) {
+						alert("Try Again !");
+						return false;
+					} else if (checar3 == false) {
+						alert("Try Again !");
+						return false;
+					} else if (checar3 != "The Capilano Suspension Bridge" ) {
+						alert("Try Again !");
+						return false;
+					} else
+					{
+						alert("Congratulations!");
+						window.open('exercicios.html');
+					}
+				}
+			</script>
+		</form>
+	</div>
+</body>
+</html>

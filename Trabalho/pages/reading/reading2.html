@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reading</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/reading.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+</head>
+<body>
+	<div class="form">
+		<h4 class="header">Now answer the questions.</h4>
+		<form name="form1" action="#" onsubmit="return validateForm()" method="post">
+			<p id="t"> According to the text, Ottawa is great place to live in. </p>
+
+			<label><input type="radio" id="correta1" name="questao1" value="a" /> True</label>
+			<br />
+			<label><input type="radio" id="incorreta" name="questao1" value="b" /> False</label>
+			<br />
+			<br />
+
+			<p id="t">In Canada, compared to the other cities, in which place is Ottawa?</p>
+
+			<label><input id="correta2" type="radio" name="questao2" value="a" /> Fourth place</label>
+			<br />
+			<label><input id="incorreta" type="radio" name="questao2" value="b" /> First place</label>
+			<br />
+			<label><input id="incorreta" type="radio" name="questao2" value="c" /> Twelfth place</label>
+			<br />
+			<label><input id="incorreta" type="radio" name="questao2" value="d" /> Second place</label>
+			<br />
+			<br />
+
+			<p id="t">Vancouver is the capital of Ottawa</p>
+
+			<label><input id="incorreta" type="radio" id="correta3" name="questao3" value="a" />True</label>
+			<br />
+			<label><input id="correta3" type="radio" name="questao3" value="b" />False</label>
+			<br />
+
+			<div class="erro"><p id="mesg"></p></div>
+
+			<button type="submit" class="continue2" name="enviar" onclick="return validar()">
+				<a href="reading3.html">Continue</a>
+			</button>
+
+			<script type="text/javascript">
+				function validar(){
+					checar1 = document.getElementById("correta1").checked;
+					checar2 = document.getElementById("correta2").checked;
+					checar3 = document.getElementById("correta3").checked;
+
+					if(checar1 == false){
+  						alert("Try Again!");
+						return false;
+					} else if (checar2 == false) {
+						alert("Try Again!");
+						return false;
+					} else if (checar3 == false) {
+						alert("Try Again!");
+						return false;
+					}
+						else
+						{
+							alert("Congratulations!");
+							//window.open('reading3.html');
+						}
+				}	
+			</script>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercicios</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
+	<link rel="stylesheet" type="text/css" href="../../css/index1.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else{
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<body>
+	<div class="wrappen">
+		<nav>
+			<div class="logo">Visit Canada</div>
+			<ul>
+				<li><a href="../index1.html" class="back">Home</a></li>
+				<li><a href="#">Exercises</a></li>
+				<li><a href="../cities/cities.html">Cities</a></li>
+				<li><a class="active" href="#">Login</a></li>
+			</ul>
+		</nav>
+
+		<section class="secExercicos">
+			<p class="titulo" id="tx"> Let's practice!</p>
+			<p class="exer">Practice your English and learn about Canada</p>
+
+			<div class="container_button" id="centro">
+				<a href="../listening/listening.html"class="btn_exer"><button type="button">Listening Activity</button></a>
+				<a href="../writing/writing.html" class="btn_exer"><button type="button" >Writing Activity</button> </a>
+				<a href="../reading/reading1.html" class="btn_exer"> <button type="button">Reading Activity</button></a>	
+			</div>
+		</section>
+		
+		<footer>
+			2018 - Desenvolvimento Web & English
+		</footer>
+	</div>
+</body>
+</html>

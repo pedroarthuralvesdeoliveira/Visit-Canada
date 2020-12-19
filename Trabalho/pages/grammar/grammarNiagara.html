@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grammar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reading.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+</head>
+<body>
+	<div class="form">
+		<h4 class="header">Practice HAS/HAVE </h4>
+		<form id="pergunta" name ="pergunta" onsubmit="return validar()">
+			<p>According to the grammar of the highlighted words:</p>
+			<p id="t"> My parents ________ a parrot.</p>
+			<label><input type="radio" name="questao1" value="a" id="correta1" />have</label><!--certo-->
+			<br> 
+			<label><input type="radio" name="questao1" value="b" id="incorreta" />has</label> 
+			<br>
+			<br>
+
+			<p id="t"> My sister __________ a lot of friends.</p>	
+			<label><input type="radio" name="questao2" value="a" id="incorreta" /> have </label>  
+			<br>
+			<input type="radio" name="questao2" value="b" id="correta2" /> has </label><!-- correta-->
+			<br>							
+			<br>
+
+			<p id="t"> Do you __________ a dog? </p>
+			<br>
+			<label><input type="radio" name="questao3" value="a" id="correta3" /> have</label><!-- correta-->
+			<br>				
+			<label><input type="radio" name="questao3" value="b" id="incorreta" /> has  </label>
+			<br>
+
+			<p id="t"> Does Rachel ___________ a cat? </p>
+			<br>					
+			<label><input type="radio" name="questao4" value="a" id="correta4" /> have </label><!-- correta-->
+			<br>				
+			<label><input type="radio" name="questao4" value="b" id="incorreta" /> has </label>
+			<br>			
+		</form>
+
+		<button type="submit" class="continue2" name="enviar" onclick="return validar();">
+			<a href="../cities/cities.html">Continue</a>
+		</button>
+
+		<script type="text/javascript">
+			function validar(){	
+				checar1 = document.getElementById("correta1").checked;
+				checar2 = document.getElementById("correta2").checked;
+				checar3 = document.getElementById("correta3").checked;
+				checar4 = document.getElementById("correta4").checked;
+
+				if(checar1 == false){
+  					alert("Try Again!");
+					return false;
+				} else if (checar2 == false) {
+					alert("Try Again!");
+					return false;
+				} else if ( checar3 == false) {
+					alert("Try Again!");
+					return false;
+				} else if (checar4 == false) {
+					alert("Try Again!");
+					return false;
+				} else {
+					alert("Congratulations!");
+					//window.open('cidade3.html');
+					}
+			}
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cities</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="../../css/index1.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else{
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<body>
+	<div class="wrappen">
+		<nav>
+			<div class="logo">Visit Canada</div>
+			<ul>
+				<li><a href="../index1.html" class="back">Home</a></li>
+				<li><a href="../exercises/exercicios.html">Exercises</a></li>
+				<li><a href="#">Cities</a></li>
+				<li><a class="active" href="#">Login</a></li>
+			</ul>
+		</nav>
+
+		<div class="text">
+			<section class="secCities">
+				<p class="titulo" id="tx_cities"> More about Canadá!</p>
+				<p class="exer">Check some Canadian cities below</p>
+			</section>
+		</div>
+
+		<div class="container_button_cities" id="centro_cities">
+			<a href="cidade1.html"class="btn_exer"><button type="button">Vancouver</button></a>
+			<a href="cidade2.html" class="btn_exer"><button type="button">Alberta</button> </a>
+			<a href="cidade3.html" class="btn_exer"> <button type="button">Toronto</button></a>
+			<a href="cidade4.html" class="btn_exer"> <button type="button">Ottawa</button></a>
+			<a href="cidade5.html" class="btn_exer"> <button type="button">Niagara</button></a>
+		</div>
+			
+		<footer>
+			2018 - Desenvolvimento Web & English
+		</footer>
+	</div>
+</body>
+</html>

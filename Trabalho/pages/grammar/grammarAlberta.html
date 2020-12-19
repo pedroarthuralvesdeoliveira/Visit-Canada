@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grammar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/cidade.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+</head>
+<body>
+	<!-- Alberta-->
+	<div class="form">
+		<h4 class="header">Practice verb to be</h4>
+		<form id="pergunta" name="pergunta" onsubmit="return validar()">
+			<p id="t"> Choose the negative form of the sentence: "The Crown of the Continent is also called the National Park of Peace"</p>
+			<label><input type="radio" name="questao1" value="a" id="incorreta" /> The Crown of the Continent is also called the National Park of Peace</label>
+			<br>
+			<label><input type="radio" name="questao1" value="b" id="incorreta" /> The Crown of the Continent not is also called the National Park of Peace</label>
+			<br>
+			<label><input type="radio" name="questao1" value="c" id="correta1" /> The Crown of the Continent isn't also called the National Park of Peace</label>
+			<br>
+			<br>
+
+			<p id="t">Choose the  interrogative form of the sentence: "The Waterton National Park trails are ideal for anyone who wants to improve the mountaineering in a special circuit"</p>
+					
+			<label><input type="radio" name="questao2" value="a" id="correta2" /> Are the Waterton National Park trails ideal for anyone who wants to improve the mountaineering in a special circuit? </label>  <!-- correta-->
+			<br>
+			<input type="radio" name="questao2" value="b" id="incorreta"/> Do the Waterton National Park trails ideal for anyone who wants to improve the mountaineering in a special circuit?</label>
+			<br>					
+			<br>
+			<p id="t">Choose the negative form of the sentence: In the summer, paddling in this sparkling blue water lake (the Crypt Lake), surrounded by the Valley of the Ten Peaks, is one of the most welcoming and surprising experiences when visiting Banff National Park. </p>
+			<br>						
+			<label><input type="radio" name="questao3" value="a" id="correta3" /> In the summer, paddling in this sparkling blue water lake (the Crypt Lake), surrounded by the Valley of the Ten Peaks, isn't one of the most welcoming and surprising experiences when visiting Banff National Park.  </label>
+			<br>			
+			<label><input type="radio" name="questao3" value="b" id="incorreta" /> In the summer, paddling in this sparkling blue water lake (the Crypt Lake), surrounded by the Valley of the Ten Peaks, not is one of the most welcoming and surprising experiences when visiting Banff National Park. </label>
+			<br>			
+		</form>
+
+		<button type="submit" class="continue2" name="enviar" onclick="return validar();">
+			<a href="../cities/cidade3.html">Continue</a>
+		</button>
+
+		<script type="text/javascript">
+				function validar(){
+					checar1 = document.getElementById("correta1").checked;
+					checar2 = document.getElementById("correta2").checked;
+					checar3 = document.getElementById("correta3").checked;
+					if(checar1 == false){
+						alert("Try Again!");
+						return false;
+					} else if (checar2 == false) {
+						alert("Try Again!");
+						return false;
+					} else if ( checar3 == false) {
+						alert("Try Again!");
+						return false;
+					}
+						else
+						{
+							alert("Congratulations!");
+							//window.open('cidade3.html');
+						}
+				}
+				
+		</script>		
+	</div>
+</body>
+</html>

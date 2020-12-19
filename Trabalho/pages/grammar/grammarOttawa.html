@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grammar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reading.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+</head>
+<body>
+	<!-- ottawa-->
+	<div class="form">
+		<h4 class="header">Practice There are/ There is</h4>
+		<form id="pergunta" name ="pergunta" onsubmit="return validar()">
+			<p id="t"> <b>Put the sentences in the negative and interrogative forms:</b></p>
+			
+			<p ><i> "There is much of the political history in the works, sculptures and ceremonies."</i></p>
+			
+			<p id="t"> <b>Form negative:</b></p> 
+			<label><input type="radio" name="questao1" value="a" id="incorreta" /> Not There is much of the political history in the works, sculptures and ceremonies. </label>
+			<br>
+			<label><input type="radio" name="questao1" value="b" id="correta1" /> There isn't much of the political history in the works, sculptures and ceremonies. </label> <!-- certa-->
+			
+			<p id="t"> <b>Form interrogative:</b></p> 
+			<label><input type="radio" name="questao2" value="a" id="correta2" /> Is there much of the political history in the works, sculptures and ceremonies?</label>  <!-- correta-->
+			<br>
+			<input type="radio" name="questao2" value="b" id="incorreta" /> Is have much of the political history in the works, sculptures and ceremonies? </label>
+			<br>
+			<br>
+
+			<p ><i> "There are many interesting places to visit in Ottawa."</i></p>
+			<p id="t"> <b>Form negative:</b></p> 	
+
+			<label><input type="radio" name="questao3" value="a" id="correta3" /> There aren't many interesting places to visit in Ottawa.</label>  <!-- correta-->
+			<br>
+			<input type="radio" name="questao3" value="b" id="incorreta" /> Not have many interesting places to visit in Ottawa. </label>
+			<br>
+
+			<p id="t"><b>Form interrogative:</b> </p>
+			<label><input type="radio" name="questao4" value="a" id="correta4" /> Are there many interesting places to visit in Ottawa?  </label>
+			<br>	
+			<label><input type="radio" name="questao4" value="b" id="incorreta" /> There are many interesting places to visit in Ottawa?  </label>
+			<br>
+		</form>
+
+		<button type="submit" class="continue2" name="enviar" onclick="return validar();">
+			<a href="../cities/cidade5.html">Continue</a>
+		</button>
+
+		<script type="text/javascript">
+			function validar(){
+				checar1 = document.getElementById("correta1").checked;
+				checar2 = document.getElementById("correta2").checked;
+				checar3 = document.getElementById("correta3").checked;
+				checar4 = document.getElementById("correta4").checked;
+					
+				if(checar1 == false){
+  					alert("Try Again!");
+					return false;
+				} else if (checar2 == false) {
+					alert("Try Again!");
+					return false;
+				} else if ( checar3 == false) {
+					alert("Try Again!");
+					return false;
+				} else if (checar4 == false) {
+					alert("Try Again!");
+					return false;
+				} else {
+					alert("Congratulations!");
+					//window.open('cidade3.html');
+				}
+			}	
+		</script>
+	</div>
+</body>
+</html>

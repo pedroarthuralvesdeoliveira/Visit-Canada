@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Visit Canada</title>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
+	<link rel="stylesheet" type="text/css" href="../css/index1.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else{
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<body>
+	<div class="wrappen">
+		<nav>
+			<div class="logo">Visit Canadá</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="exercises/exercicios.html">Exercises</a></li>
+				<li><a href="cities/cities.html">Cities</a></li>
+				<li><a class="active" href="#">Login</a></li>
+			</ul>
+		</nav>
+
+		<section class="sec1">
+			<p class="titulo"> Canadá</p>
+		</section>
+
+		<section class="content">
+			<h1 class="titulo2">Welcome to Canadá</h1>
+			<p>Canada is a country of diversity and quality of life in both English and French sides. It is the second country in the world, a world reference in health, safety and education</p>
+			<p>
+				<h1 class="titulo2">This is Canada.</h1>
+			</p>
+			
+			<video controls="" id="VIDEO">
+				<source src="../video/canada.mp4" type="video/mp4">
+			</video>
+
+			<footer>
+				2018 - WEB Development & English
+			</footer>
+		</section>
+	</div>
+</body>
+</html>

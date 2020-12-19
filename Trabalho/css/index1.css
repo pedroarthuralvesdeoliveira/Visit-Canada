@@ -1,0 +1,239 @@
+body{
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .3s;
+}
+nav.black{
+	background: rgba(0,0,0,0.8);
+	height: 100px;
+	padding: 10px 100px;
+
+
+}
+nav .logo {
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	transition: .3s;
+
+}
+
+nav.black.logo{
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+}
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+
+}
+nav.black ul li a {
+	color: #fff;
+}
+nav ul li a:focus{
+	outline: none;
+}
+
+
+nav ul li a.active{
+	background: #084B8A;
+	color: #fff;
+}
+
+section.sec1{
+	width: 100%;
+	height: 100vh;
+	background: url(https://images.pexels.com/photos/108486/pexels-photo-108486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-size: cover;
+	background-position: center;
+
+}
+
+.content{
+	margin-top: 80px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.content p {
+	width: 900px;
+	margin:30px auto;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 30px;
+
+}
+h2{
+	text-align: center;
+	font-size: 50px;
+}
+footer{
+	background: #f0f0f0;	
+	padding: 30px 0px; 
+	color: black;
+	text-align: center;
+}
+nav ul li a:hover {
+	color: #fff;
+}
+nav ul li a.active:hover{
+	background: #AFC4F5;
+}
+.tamanhoImg{
+	width: 900px;
+	height: 600px;
+
+}
+.titulo {
+	font-family: 'Quicksand', sans-serif;
+	padding-top: 230px;
+	margin: 0;
+	font-size: 70px;
+	text-align:center;
+	color:#FAFAFA;
+}
+
+.titulo2 {
+	font-family: 'Quicksand', sans-serif;
+	padding-top: 10px;
+	margin: 0;
+	font-size: 50px;
+	text-align:center;
+	color:#0A0A2A;
+}
+
+.titulo_cities {
+	font-family: 'Quicksand', sans-serif;
+	padding-top: 10px;
+	margin: 0;
+	font-size: 50px;
+	text-align:center;
+	color:#fff;
+}
+
+
+
+.exer{
+	width: 900px;
+	margin:60px auto;
+	text-align: center;
+	font-size: 30px;
+	line-height: 30px;
+	padding: 5px;
+}
+
+
+
+button{
+	padding: 20px 60px;
+	font-size: 16px;
+	font-family: 'Quicksand';
+	background:#F2F2F2;
+	border:solid 2px #FAFAFA;
+	border-radius: 4px;
+	margin:30px;
+	text-decoration:none;
+	color:#0A0A2A;
+	margin-left: 45%;
+}
+button:hover{
+	background:#AFC4F5;
+}
+.container_button{
+	display: flex;
+	align-items: center;
+	left:50%;
+}
+
+.container_button_cities{
+	display: flex;
+	align-items: center;
+	left:50%;
+
+}
+#centro {
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:150px;
+    margin-left:-400px;
+}
+#centro_cities {
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:150px;
+    margin-left:-600px;
+}
+
+section.secExercicos{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/exer.jpg);
+	background-size: cover;
+	background-position: center;
+	color:#44547C;
+
+}
+
+section.secCities{
+	width: 100%;
+	height: 100vh;
+	background: url(../img/y.jpg);
+	background-size: cover;
+	background-position: center;
+	color:#fff;
+
+}
+#tx {
+
+	color:#44547C;
+
+}
+
+#tx_cities {
+
+	color:#fff;
+
+}
+
+#VIDEO{
+
+	width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display:block;
+
+}
