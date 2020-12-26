@@ -201,7 +201,7 @@ button:hover{
 section.secExercicos{
 	width: 100%;
 	height: 100vh;
-	background: url(../img/exer.jpg);
+	background: url(../pages/img/exer.jpg);
 	background-size: cover;
 	background-position: center;
 	color:#44547C;
@@ -211,7 +211,7 @@ section.secExercicos{
 section.secCities{
 	width: 100%;
 	height: 100vh;
-	background: url(../img/y.jpg);
+	background: url(../pages/img/y.jpg);
 	background-size: cover;
 	background-position: center;
 	color:#fff;
