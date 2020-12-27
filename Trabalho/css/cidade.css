@@ -72,18 +72,18 @@ section.sec1Whistler{
 	background-position: center;
 }
 
-section.sec1Alberta{
-	width: 100%;
-	height: 100vh;
-	background: url(../pages/img/banff.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
 section.sec1Toronto{
 	width: 100%;
 	height: 100vh;
 	background: url(../pages/img/cn2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+section.sec1Alberta{
+	width: 100%;
+	height: 100vh;
+	background: url(../pages/img/banff.jpg);
 	background-size: cover;
 	background-position: center;
 }
