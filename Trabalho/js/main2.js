@@ -66,7 +66,7 @@ window.onload = function () {
 			document.querySelector('#form').value = "";
 		}
 		else{
-			window.location.href = '../pages/exercises/exercicios.html'
+			window.location.href = '../exercises/exercicios.html'
 		}
 	}
 
