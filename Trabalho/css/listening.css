@@ -68,7 +68,6 @@ body{
 	position: absolute;
 	top: 90%;
 	left: 85%;
-
 	background-color:  #38a9f6;
 	color: white;
 	font-size: 16px;
@@ -77,7 +76,6 @@ body{
 	cursor: pointer;
 	border-radius: 16px;
 	outline: none;
-
 }
 .continue a{
 	color: white;
@@ -86,7 +84,6 @@ body{
 	text-decoration:none;
 
 } 
-
 
 img{
 	width: 575px;
