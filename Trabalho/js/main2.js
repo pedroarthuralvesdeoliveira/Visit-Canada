@@ -75,7 +75,6 @@ window.onload = function () {
 			alert('Congratulations!');
 			contador++;
 			updateShit();
-			window.location.href = '../exercises/exercicios.html'
 		}else{
 			alert('Try again!')
 		}
