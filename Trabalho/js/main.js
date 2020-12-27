@@ -130,7 +130,7 @@ window.onload = function () {
                 break
             
             default:
-                window.location.href = '../pages/exercises/exercicios.html'
+                window.location.href = '../exercises/exercicios.html'
                 break
         }
     })
