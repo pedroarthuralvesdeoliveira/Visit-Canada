@@ -108,6 +108,6 @@ function validar2() {
 		form2.rep_senha.focus();
 		return false; 
 	} else {
-		window.open('../index2.html');
+		window.open('../index.html');
 	}
 }
